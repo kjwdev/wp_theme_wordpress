@@ -1,0 +1,9 @@
+<div class="label">Categorie</div>
+<ul class="menu-type">   
+    <div class="defaultValue"><a href="#">{{opt.cat}}</a></div>
+    <li class="choices-cat" ng-show="optCat">
+        <div ng-repeat="cat in categories" ng-if="cat.name != opt.cat">
+            <a href="#" ng-click="showByCat(cat.slug);">{{cat.name}}</a>
+        </div>
+    </li>
+</ul>

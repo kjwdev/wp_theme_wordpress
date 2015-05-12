@@ -1,0 +1,9 @@
+<div class="label">Taille</div>
+<ul class="menu-type">   
+    <div class="defaultValue"><a href="#">{{opt.tai}}</a></div>
+    <li class="choices-cat" ng-show="optTai">
+        <div ng-repeat="tai in tailles" ng-if="tai.name != opt.tai">
+            <a href="#" ng-click="upSize(tai.slug);">{{tai.name}}</a>
+        </div>
+    </li>
+</ul>

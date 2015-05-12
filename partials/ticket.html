@@ -1,0 +1,12 @@
+<h2><a href="{{ticket.link}}" ng-bind-html="ticket.title"></a></h2>
+<div style="text-align : center" ng-bind-html="ticket.img[class]">
+</div>
+<div class="info">
+    <div class="content">
+        <div ng-bind-html="ticket.excerpt"></div>
+    </div>
+</div>
+<div class="info footer">
+    <span class="label">Créé le</span> <span>{{ticket.dtCreate}}</span>, modifié le <span ng-if="ticket.dtModified">{{ticket.dtModified}}</span>
+    <span class="label">Catégorie :</span> <span ng-repeat="cat in ticket.cat">{{cat.name}}</span>
+</div>

@@ -1,0 +1,454 @@
+/*
+Theme Name: Surfing Splatch
+Author: jbc
+Description: The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background.
+Version: 1.0
+*/
+
+/*
+1. Définition du header
+2. Définition du Wrapper
+3. Définition du Contenu du site
+*/
+
+body {
+	font-size : 13px;
+}
+
+a {
+	text-decoration : none;
+}
+
+ul {
+	margin : 0;
+	padding : 0;
+}
+ul li {
+	margin : 0;
+	padding : 0;
+	list-style-type : none;
+}
+
+/* . Définition du header
+ ***************************************** */
+.header, header {
+    height : 70px;
+	background: #f6b84b;
+}
+.header .box-logo:after {
+	clear : both;
+	display : table;
+	content : "";
+	height : 1;
+}
+.header .logo {
+    float : left;
+	margin : 0;
+	padding : 0;
+    line-height : 18px;
+    margin : 0 10px 5px 15px;
+}
+
+.box-logo .logo a {
+    display : block;
+    text-decoration : none;
+    color : #fff;
+    font-size : 19px;
+    letter-spacing : 2px;
+}
+
+.box-citation {
+    line-height : 70px;
+    float : left;
+    margin : 0;
+    padding : 0;
+    font-size : 16px;
+}
+.header .wrapper {
+    width : 100%;
+}
+#main {
+	
+}
+
+/* . Définition du Wrapper
+ ***************************************** */
+.wrapper {
+ 	margin : 0 auto;
+ 	width : 960px;
+}
+.wrapper:after {
+	clear: both;
+	display : table;
+	line-height : 1;
+	content : " ";
+}
+#intro {
+    margin-bottom : 25px;
+    background : #e5ebdd;
+    padding : 20px 15px;
+    color : #7a7a7a;
+}
+/* . Définition du Contenu du site
+ *****************************************/
+.box-app {
+    width : 100%;
+}
+
+/* . OPTION BAR
+ *****************************************/
+.box-option-bar {
+    background : #909090;
+    color : #fff;
+    height : 35px;
+    line-height : 35px;
+    margin-bottom : 25px;
+}
+.option-bar {
+    padding : 5px 0;
+    height : 25px;
+    line-height : 25px;
+    
+}
+.option-bar li {
+    float : left;
+}
+
+.option-bar li .label {
+    height : 25px;
+    line-height : 25px;
+    float : left;
+    padding : 0 15px;
+    background : #afafaf;
+}
+.input-search {
+    color : #000;
+    height : 20px;
+    line-height : 20px;
+}
+.defaultValue {
+    background : #fff;
+    padding :0 15px;
+}
+.defaultValue a {
+    color : #000;
+}
+.option-bar>li .menu-type {
+    float : left;
+}
+.choices-cat {
+    width : 270px;
+    z-index : 50;
+}
+.choices-cat div{
+    margin : 2px;
+    padding : 0 5px;
+    float : left;
+    width : 120px;
+    border-bottom : 1px solid #000;
+}
+.choices-cat div a {
+    color : #434343;
+}
+
+.option-bar>li .menu-type .possibility {
+    
+}
+
+.option-bar>li .menu-type .possibility div {
+    float : left;
+}
+
+.option-bar>li .menu-type .possibility:after {
+    clear: both;
+    display : table;
+    line-height : 1;
+    content : " ";
+}
+.option-bar>li .menu-type li{
+    display : block;
+}
+
+.option-bar:after {
+    clear: both;
+    display : table;
+    line-height : 1;
+    content : " ";
+}
+/*
+ * Définition du choices-cat dans les option
+ ************************************************/
+.choices-cat {
+    position : absolute;
+    background : #dfdfdf;
+    border : 2px solid #888888;
+}
+
+.box-tickets {
+    position : relative;
+}
+/* Définitions de laffichage des posts
+ **********************************************/
+.ticket {
+    /*padding : 15px;*/
+    float : left;
+    background : #e9e9e9;
+    min-height : 310px;
+}
+.ticket img {
+    width : 100%;
+    height : auto;
+}
+.ticket h2 {
+    margin-bottom : 8px;
+    width : 95%;
+    margin : 5px auto;
+}
+.ticket h2 a{
+    font-size : 18px;
+    color : #4c4c4c;
+}
+.ticket .info {
+    margin : 2px;
+    padding : 5px;
+    background : #fff;
+    width : 95%;
+    margin : 7px auto;
+    color : #434343;
+}
+.ticket .info .label {
+    font-weight : 600;
+}
+.ticket .footer {
+    font-size : 11px;
+}
+.dev {
+    background : #865692;
+}
+.dev h2 a{
+    color : #38233d;
+}
+.dev .info {
+    background : #f5dbfb;
+}
+
+.actu {
+    background : #d37141;
+}
+.actu h2 a{
+    color : #603d00;
+}
+.actu .info {
+    background : #fff0d7;
+}
+
+.musique {
+    background : #296fc5;
+}
+.musique h2 a{
+    color : #0f386a;
+}
+.musique .info {
+    background : #dcecff;
+}
+
+.realisation {
+    background : #d01919;
+}
+.realisation h2 a{
+    color : #520202;
+}
+.realisation .info {
+    background : #fddddd;
+}
+
+.tutoriel {
+    background : #23a818;
+}
+.tutoriel h2 a{
+    color : #064b01;
+}
+.tutoriel .info {
+    background : #dffbdc;
+}
+
+/* Définition de la page single
+ **************************************/
+.row {
+    margin-bottom : 15px;
+}
+.row:after {
+    clear: both;
+    display : table;
+    line-height : 1;
+    content : " ";
+}
+.btn a{
+    display : block;
+    float : left;
+    text-align : center;
+    color : #fff;
+    font-weight : 900;
+    background : #f6b84b;
+    width : 130px;
+    line-height : 35px;
+    margin-right : 7px;
+}
+
+.details {
+    float : left;
+    width : 70%;
+}
+.left {
+    float : right;
+    width : 29%;
+    background : #c4c4c4;
+}
+.details h2 {
+    margin-bottom : 35px
+}
+.details .text {
+    margin-bottom : 20px;
+}
+.details .img {
+    text-align : center;
+    margin-bottom : 20px;
+}
+.details .video {
+    text-align : center;
+    margin-bottom : 20px;
+}
+.details pre {
+    padding-left : 7px;
+    background : #c5c5c5;
+}
+
+.details .details-dt {
+    background : #dddddd;
+    padding : 15px;
+    margin-bottom : 30px;
+}
+.details .details-img {
+    margin-bottom : 20px;
+}
+
+/* Définition des différentes dimension de format d'affichage des Posts'
+ **************************************************************************/
+ticket {
+    margin-bottom : 25px;
+}
+
+
+/* . Définitions de la Sidebar
+ ***************************************** */
+.sidebar {
+    padding : 20px;
+}
+.sidebar .widget {
+    margin-top : 15px;
+    margin-bottom : 30px;
+}
+.sidebar .widget a {
+    display : block;
+    margin : 7px;
+    color : #fff;
+}
+
+/* .Définitions du calendrier
+ *********************************************/
+.sidebar .widget #wp-calendar {
+    border : 1px solid #fff;
+    width : 100%;
+}
+.sidebar .widget #wp-calendar thead {
+    border-bottom : 1px solid #fff;
+}
+.sidebar .widget #wp-calendar tbody td {
+    text-align : center
+}
+
+/* .Définition du footer
+ *************************************/
+footer {
+    background : #5d3619;
+}
+footer .widget_text {
+    margin : 0;
+}
+footer .sep {
+    width : 95%;
+    margin : auto;
+    height: 1px;
+    border-bottom : 1px solid #6db115;
+}
+footer .sidebar .widget-title{
+    color : #6db115;
+}
+footer .sidebar input[type=text] {
+    color : #000;
+}
+footer .textwidget {
+    color : #fff;
+}
+footer .logo {
+    padding-top : 10px;
+    margin-left : 7px;
+}
+footer .col {
+    float : left;
+    width : 25%;
+}
+footer .col-content {
+    border-right : 1px solid #000;
+    height : 100%;
+    margin : 1px;
+}
+footer .first-col {
+    border-left : 1px solid #000;
+}
+
+@media screen and (max-width: 960px) {
+    .wrapper {
+        width : 100%;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    footer .col {
+        float : none;
+        width : 100%;
+    }
+    footer .col-content {
+        border-right : none;
+        height : 100%;
+        margin : 1px;
+        border-bottom : 1px solid #000;
+    }
+    footer .first-col {
+        border-left : none;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .header, header {
+        height : auto;
+        background: #f6b84b;
+    }
+    .header .logo {
+        float : none;
+        margin : 0;
+        padding : 0;
+        line-height : 18px;
+        margin : 0 auto;
+        text-align : center;
+    }
+    .box-citation {
+        display : none;
+    }
+
+    .option-bar>li {
+        float : none;
+        display : block;
+    }
+    
+}
